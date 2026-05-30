@@ -27,11 +27,16 @@ Industrial downtime costs manufacturing industries millions annually. This proje
 ├── predictive_maintenance_training.ipynb # Google Colab notebook demonstrating EDA and modeling
 └── requirements.txt                    # Project library dependencies
 
-Sensor Attribute	Type	Example Value	Description
-air_temp	Float	300	Ambient temperature around the machine
-process_temp	Float	310	Internal engine operational temperature
-rotational_speed	Float	2800	Engine speed in Rotations Per Minute (RPM)
-torque	Float	65	Rotational mechanical torque load
-tool_wear	Float	240	Wear and tear status time on cutting tools
-temp_diff	Float	10	Calculated difference between process and air temp
-power_index	Float	182000	Aggregated mechanical power requirement metric
+## 📊 Core Data Architecture
+
+The API accepts structured telemetry payloads matching the following operational parameters:
+
+| Sensor Attribute | Type | Example Value | Description |
+| :--- | :--- | :--- | :--- |
+| `air_temp` | Float | `300.0` | Ambient temperature around the machine |
+| `process_temp` | Float | `310.0` | Internal engine operational temperature |
+| `rotational_speed` | Float | `2800.0` | Engine speed in Rotations Per Minute (RPM) |
+| `torque` | Float | `65.0` | Rotational mechanical torque load |
+| `tool_wear` | Float | `240.0` | Wear and tear status time on cutting tools |
+| `temp_diff` | Float | `10.0` | Calculated difference between process and air temp |
+| `power_index` | Float | `182000.0` | Aggregated mechanical power requirement metric |
