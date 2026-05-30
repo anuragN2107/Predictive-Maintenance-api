@@ -27,6 +27,8 @@ Industrial downtime costs manufacturing industries millions annually. This proje
 ├── predictive_maintenance_training.ipynb # Google Colab notebook demonstrating EDA and modeling
 └── requirements.txt                    # Project library dependencies
 
+---
+
 ## 📊 Core Data Architecture
 
 The API accepts structured telemetry payloads matching the following operational parameters:
